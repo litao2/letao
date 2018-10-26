@@ -4,3 +4,98 @@
 .mt-150{
   margin-top: 150px;
 }
+
+body , html {
+  width: 100%;
+  height: 100%;
+}
+body{
+  padding-left: 180px;
+  transition: all 1s;
+}
+body.active {
+  padding-left: 0;
+}
+a:hover,a:link,a:visited,a:active{
+  text-decoration: none;
+}
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222d32;
+  transition: all 1s;
+}
+.lt_aside.active {
+  left: -180px;
+}
+.brand {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background-color: #367fa9;
+  line-height: 50px;
+  text-align: center;
+}
+.brand a {
+  color: #fff;
+  font-size: 24px;
+  list-style: none;
+  display: block;
+}
+
+.user img{
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 30px auto 10px;
+  display: block;
+  border-radius: 50%;
+}
+ P {
+   text-align: center;
+   font-size: 16px;
+   color: #fff;
+ }
+  .nav ul {
+    padding-left: 0;
+  }
+  .nav ul a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #ccc;
+  padding-left: 30px;
+  border: 3px solid transparent;
+  list-style: none;
+}
+.lt_main{
+  width: 100%;
+  height: 100%;
+  /* padding-left: 180px; */
+  background-color: #fff;
+
+}
+.lt_topbar{
+  height: 50px;
+  line-height: 50px;
+  background-color: #3c8dbc;
+  padding: 0 20px;
+}
+.lt_topbar a {
+  color: #fff;
+  font-size: 16px;
+}
+.breadcrumb{
+  margin-top: 20px;
+}
+.chart_left,
+.chart_right {
+  width: 50%;
+  height: 400px;
+}
+
+
