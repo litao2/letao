@@ -13,6 +13,12 @@ body{
   padding-left: 180px;
   transition: all 1s;
 }
+.mb_20{
+  margin-bottom: 20px;
+}
+th{
+  text-align: center; 
+}
  .lt_content .table > tbody > tr > td {
   text-align: center;
   vertical-align: middle;
