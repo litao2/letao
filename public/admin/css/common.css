@@ -13,6 +13,10 @@ body{
   padding-left: 180px;
   transition: all 1s;
 }
+ .lt_content .table > tbody > tr > td {
+  text-align: center;
+  vertical-align: middle;
+}
 body.active {
   padding-left: 0;
 }
@@ -69,8 +73,12 @@ a:hover,a:link,a:visited,a:active{
   line-height: 40px;
   color: #ccc;
   padding-left: 30px;
-  border: 3px solid transparent;
+  border-left: 3px solid transparent;
   list-style: none;
+}
+.nav a.active {
+  background-color: #1d1f21;
+  border-left: 3px solid #069;
 }
 .lt_main{
   width: 100%;

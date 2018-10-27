@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
   <link rel="stylesheet" href="lib/nprogress/nprogress.css">
   <link rel="stylesheet" href="css/common.css">
-  <title> 首页 </title>
+  <title> 一级分类管理 </title>
 </head>
 
 <body>
@@ -31,21 +31,21 @@
           </a>
         </li>
         <li class="category">
-          <a href="javascript:void(0);">
-            <span class="glyphicon glyphicon-list"></span>
-            分类管理
-          </a>
-          <div class="child" style="display: none;">
-            <a href="first.html">一级分类</a>
-            <a href="second.html">二级分类</a>
-          </div>
-        </li>
-        <li>
-          <a href="product.html">
-            <span class="glyphicon glyphicon-tags"></span>
-            商品管理
-          </a>
-        </li>
+            <a href="javascript:void(0);">
+              <span class="glyphicon glyphicon-list"></span>
+              分类管理
+            </a>
+            <div class="child" style="display: block;">
+              <a class="active" href="first.html">一级分类</a>
+              <a  href="second.html">二级分类</a>
+            </div>
+          </li>
+          <li>
+              <a href="product.html">
+                <span class="glyphicon glyphicon-tags"></span>
+                商品管理
+              </a>
+            </li>
       </ul>
     </div>
   </div>
@@ -62,21 +62,15 @@
     </div>
 
     <div class="container-fluid">
-      <ol class="breadcrumb">
-        <li>
-          <a href="#">管理系统</a>
-        </li>
-        <li>
-          <a href="#">首页</a>
-        </li>
-      </ol>
-      <div class="lt_content">
-        <div class="chart_left pull-left">11</div>
-        <div class="chart_right pull-right">22</div>
-      </div>
+        <ol class="breadcrumb">
+            <li><a href="#">管理系统</a></li>
+            <li><a href="#">一级分类</a></li>
+        </ol>
+        <!-- 具体内容 -->
+        <div class="lt_content"></div>
     </div>
   </div>
-  
+
   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
@@ -104,9 +98,8 @@
   <script src="lib/bootstrap/js/bootstrap.js"></script>
   <script src="lib/bootstrap-validator/js/bootstrapValidator.js "></script>
   <script src="lib/nprogress/nprogress.js"></script>
-  <script src="lib/echarts/echarts.min.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/user.js"></script>
 </body>
 
 </html>
