@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>分类页</title>
+  <title>搜索页</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="lib/mui/css/mui.css">
   <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/search.css">
 </head>
 
 <body>
@@ -22,39 +22,31 @@
       <a class="icon_left" href="javascript:history.go(-1);">
         <span class="mui-icon mui-icon-back"></span>
       </a>
-      <p>乐淘云购</p>
-      <a class="icon_right" href="search.html">
-        <span class="fa fa-search"></span>
-      </a>
+      <p>搜索中心</p>
     </div>
+
     <!-- 中间 -->
     <div class="lt_main">
-      <!-- 左侧 -->
-      <div class="cart-left">
-        <!-- 右侧区域滚动的父盒子 -->
-        <div class="mui-scroll-wrapper">
-          <!-- 右侧区域滚动的子盒子 -->
-          <div class="mui-scroll">
-            <ul>
-              <!-- 挖坑 -->
-            </ul>
-          </div>
+      <!-- 搜索框 -->
+      <div class="lt_search">
+        <input type="text" placeholder="请输入搜索关键字">
+        <button class="mui-btn mui-btn-blue search_btn">搜索</button>
+      </div>
+      <!-- 历史记录 -->
+      <div class="lt_history">
+        <div class="title mui-clearfix">
+          <span class="mui-pull-left">搜索历史</span>
+          <samp class="mui-pull-right fa fa-trash btn_empty">清空记录</samp>
+        </div>
+        <div class="content">
+          <ul>
+            <li>
+              <a href="searchList.html" class="mui-pull-left">11</a>
+              <span class="mui-icon mui-icon-closeempty mui-pull-right btn_delete"></span>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <!-- 右侧 -->
-      <div class="cart-right">
-        <!-- z左侧区域滚动的父盒子  -->
-        <div class=" mui-scroll-wrapper">
-          <div class=" mui-scroll">
-            <ul>
-
-              <!-- 挖坑 -->
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <!-- 底部 -->
@@ -66,7 +58,7 @@
             <p>首页</p>
           </a>
         </li>
-        <li class="active">
+        <li>
           <a href="category.html">
             <span class="fa fa-bars"></span>
             <p>分类</p>
@@ -89,32 +81,18 @@
   </div>
 
   <script type="text/html" id="tpl">
-  {{ each rows v i }}
-      {{ if v.categoryName }}
-  <li data-id="{{v.id}}" class="{{ i===0?'active':''}}"><a href="javascript:;">{{ v.categoryName  }}</a></li>
-      {{ /if }}
-  {{ /each }}
+ 
   </script>
 
   <script type="text/html" id="tpl2">
-    {{if rows.length === 0}}
-    <p>当前分类没有数据</p>
-    {{/if}}
-    {{ each rows v i }}
-    <li data-id={{ v.id }}>
-      <a href="#">
-        <img src="{{v.brandLogo}}" alt="">
-        <p>{{ v.brandName  }}</p>
-      </a>
-    </li>
-    {{ /each }}
+   
   </script>
 
   <script src="lib/mui/js/mui.js"></script>
   <script src="./js/common.js"></script>
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./lib/zepto/zepto.min.js"></script>
-  <script src="./js/category.js"></script>
+  <script src="./js/search.js"></script>
 </body>
 
 </html>
